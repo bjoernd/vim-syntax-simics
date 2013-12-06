@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install script for Simics syntax highlighting in VIM
 
