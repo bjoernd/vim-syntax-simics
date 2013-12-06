@@ -10,15 +10,10 @@ set -u
 SOURCE=https://raw.github.com/mjwade/vim-syntax-simics/master
 INSTALLDIR=$HOME/.vim
 
-echo "Thanks for installing!"
-echo "This script will install files from this location:"
-echo "SOURCE: $SOURCE"
-echo "to this location:"
-echo "INSTALLDIR: $INSTALLDIR"
-echo "Press enter to continue.  Ctrl+c to stop"
-read
+echo "\nInstalling vim-syntax-simics"
 
 # Create the needed paths and files
+echo "\t-Making subdirs in $HOME/.vim"
 mkdir -p $INSTALLDIR/syntax/
 if [ $? -ne 0 ]; then #failed
     EXITCODE=$?
@@ -34,9 +29,9 @@ fi
 
 # Fill the files 
 # NOTE: Assumes you're running this from the web...
-echo "Fetching the files simics files from the web."
+echo "\t-Fetching the vim-simics files from the web"
 curl --raw --silent $SOURCE/syntax/simics.vim > $INSTALLDIR/syntax/simics.vim
 curl --raw --silent $SOURCE/ftdetect/simics.vim > $INSTALLDIR/ftdetect/simics.vim
 
 # Stuff should be in the files now...
-echo "Installation complete."
+echo "Installation is complete.  Enjoy!"
