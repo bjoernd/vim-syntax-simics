@@ -1,6 +1,8 @@
 #!/bin/sh
 
 # Install script for Simics syntax highlighting in VIM
+set -e
+set -u
 
 # Installation will put two files in place under $INSTALLDIR
 # syntax/simics.vim == highlighting
