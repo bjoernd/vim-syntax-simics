@@ -7,7 +7,7 @@ set -u
 # Installation will put two files in place under $INSTALLDIR
 # syntax/simics.vim == highlighting
 # ftdetect/simics.vim == filetype detection
-SOURCE=https://raw.github.com/mjwade/vim-syntax-simics/master
+SOURCE=https://raw.github.com/bjoernd/vim-syntax-simics/master
 INSTALLDIR=$HOME/.vim
 
 echo -e "Installing vim-syntax-simics"
